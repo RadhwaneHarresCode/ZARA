@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA - Where Style Meets Simplicity</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/services.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/LOgo.png">
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <div class="left-links">
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+        </div>
+        
+        <div class="logo-container">
+            <div class="logo-bg"></div>
+            <button onclick="window.location.href='index.html'">
+            <h4 class="logo">ZARA</h4>
+            </button>
+        </div>
+        
+        <div class="right-links">
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
+        <!-- Premium Services Section -->
+    <section class="services-section">
+        <div class="services-header">
+            <h1>Exclusive Services</h1>
+            <p>Elevating your shopping experience with premium, personalized services designed for the discerning customer</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service 1: Personal Styling -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://www.loveyourlook.online/images/consultation2.jpg" alt="Personal Styling Service">
+                </div>
+                <div class="service-content">
+                    <h3>Personal Styling Consultation</h3>
+                    <p>One-on-one sessions with our expert stylists to curate looks that reflect your personal style and lifestyle needs. Transform your wardrobe with professional guidance.</p>
+                    <ul class="service-features">
+                        <li>Customized style assessment</li>
+                        <li>Seasonal wardrobe planning</li>
+                        <li>Body type analysis</li>
+                        <li>Private fitting sessions</li>
+                    </ul>
+                    <button class="service-btn" data-service-id="styling" onclick="bookService('styling')">Book Consultation</button>
+                </div>
+            </div>
+
+            <!-- Service 2: Alterations -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg5q8HrjqW9Ay92eXSUFQIQlkbOTR9SXhprQ&s" alt="Premium Alterations">
+                </div>
+                <div class="service-content">
+                    <h3>Premium Alterations & Tailoring</h3>
+                    <p>Expert craftsmanship ensuring every garment fits perfectly. Our master tailors provide precision alterations for ultimate comfort and style.</p>
+                    <ul class="service-features">
+                        <li>Same-day alterations available</li>
+                        <li>Premium fabric handling</li>
+                        <li>Custom measurements</li>
+                        <li>Quality guarantee</li>
+                    </ul>
+                    <button class="service-btn" data-service-id="alterations" onclick="bookService('alterations')">Schedule Fitting</button>
+                </div>
+            </div>
+
+            <!-- Service 3: VIP Shopping -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="data:image/jpeg;base64,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" alt="VIP Shopping Experience">
+                </div>
+                <div class="service-content">
+                    <h3>VIP Shopping Experience</h3>
+                    <p>Exclusive after-hours shopping with dedicated service. Enjoy our complete attention in a private setting with refreshments and personalized attention.</p>
+                    <ul class="service-features">
+                        <li>Private store access</li>
+                        <li>Personal shopping assistant</li>
+                        <li>Complimentary refreshments</li>
+                        <li>Priority access to new collections</li>
+                    </ul>
+                    <button class="service-btn" data-service-id="vip" onclick="bookService('vip')">Request VIP Access</button>
+                </div>
+            </div>
+
+            <!-- Service 4: Wardrobe Management -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStmBCRHAApCiecveZdsSngr_hujgy1tVbX3Q&s" alt="Wardrobe Management">
+                </div>
+                <div class="service-content">
+                    <h3>Wardrobe Management</h3>
+                    <p>Comprehensive wardrobe organization and optimization service. We help you build a cohesive, functional collection that works for every occasion.</p>
+                    <ul class="service-features">
+                        <li>Wardrobe audit and assessment</li>
+                        <li>Seasonal rotation service</li>
+                        <li>Outfit planning and coordination</li>
+                        <li>Digital wardrobe catalog</li>
+                    </ul>
+                    <button class="service-btn" data-service-id="wardrobe" onclick="bookService('wardrobe')">Start Assessment</button>
+                </div>
+            </div>
+
+            <!-- Service 5: Fabric Care -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo171Gr-0XtoWHXkfwuOFmeVNfGnglCRb45Q&s" alt="Premium Fabric Care">
+                </div>
+                <div class="service-content">
+                    <h3>Premium Fabric Care</h3>
+                    <p>Specialized cleaning and maintenance services for delicate and luxury fabrics. Preserve your investment with our expert care solutions.</p>
+                    <ul class="service-features">
+                        <li>Luxury fabric specialists</li>
+                        <li>Eco-friendly cleaning methods</li>
+                        <li>Stain removal experts</li>
+                        <li>Storage solutions</li>
+                    </ul>
+                    <button class="service-btn" data-service-id="fabric-care" onclick="bookService('fabric-care')">Schedule Care</button>
+                </div>
+            </div>
+
+            <!-- Service 6: Virtual Styling -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://gemmamclean.com/wp-content/uploads/2020/05/virtual-style.jpg" alt="Virtual Styling">
+                </div>
+                <div class="service-content">
+                    <h3>Virtual Styling Sessions</h3>
+                    <p>Professional styling advice from the comfort of your home. Connect with our experts via video call for personalized fashion guidance.</p>
+                    <ul class="service-features">
+                        <li>Remote style consultations</li>
+                        <li>Digital lookbooks</li>
+                        <li>Virtual try-on technology</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                    <button class="service-btn" data-service-id="virtual" onclick="bookService('virtual')">Book Virtual Session</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Benefits Section -->
+    <section class="benefits-section">
+        <div class="benefits-header">
+            <h2>Why Choose Our Premium Services?</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <h4>Expert Guidance</h4>
+                <p>Our certified stylists and tailors bring years of industry experience and fashion expertise</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Time Saving</h4>
+                <p>Streamline your shopping and styling process with our efficient, personalized services</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Quality Assurance</h4>
+                <p>Every service is backed by our commitment to excellence and customer satisfaction</p>
+            </div>
+            <div class="benefit-item">
+                <h4>Exclusive Access</h4>
+                <p>Get first look at new collections and limited edition pieces before general release</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+        <footer class="py-5 bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3 class="zara-logo">ZARA</h3>
+                <p class="zara-footer-text">Timeless elegance meets contemporary fashion.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="zara-footer-heading">Quick Links</h4>
+                <ul class="zara-footer-list">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="zara-footer-heading">Newsletter</h4>
+                <p class="zara-footer-text">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form>
+                    <div class="zara-input-group">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="zara-btn">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="zara-copyright py-3 text-center">
+        <p>&copy; 2025 ZARA. All rights reserved. By Radhwane Harres</p>
+    </div>
+    </footer>
+    <script src="js/script1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

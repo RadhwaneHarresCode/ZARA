@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA - Where Style Meets Simplicity</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/LOgo.png">
+</head>
+<body>
+    <nav>
+        <div class="left-links">
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+        </div>
+        
+        <div class="logo-container">
+            <div class="logo-bg"></div>
+            <button onclick="window.location.href='index.html'">
+            <h4 class="logo">ZARA</h4>
+            </button>
+        </div>
+        
+        <div class="right-links">
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+       <!-- New Collection Section -->
+    <section class="new-collection">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">The Essential Edit</h2>
+            <p class="section-subtitle">Crafted pieces for effortless sophistication</p>
+        </div>
+        
+        <div class="collection-grid">
+        <!-- Collection Item 1 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://s-gents.com/cdn/shop/files/3-PastelBlueSuit1_2000x.jpg?v=1715736771" alt="Tailored Blazer">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="101" onclick="viewProductDetails(101)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Double-Breasted Blazer</h3>
+                <p>Structured silhouette in premium wool</p>
+                <span class="price">$189</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 2 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://content.woolovers.com/img/747x856/b3aec-320532_q10m_greyflint_m_20.jpg" alt="Cashmere Sweater">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="102" onclick="viewProductDetails(102)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Cashmere Crewneck</h3>
+                <p>Ultra-soft 100% Mongolian cashmere</p>
+                <span class="price">$159</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 3 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBU2FIISU4HQUhl6TnfQQOp4Qs-95xMoHwsg&s" alt="Leather Tote">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="103" onclick="viewProductDetails(103)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Signature Tote</h3>
+                <p>Italian full-grain leather</p>
+                <span class="price">$279</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 4 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="data:image/jpeg;base64,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" alt="Silk Dress">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="104" onclick="viewProductDetails(104)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Evening Slip Dress</h3>
+                <p>Luxurious 100% mulberry silk</p>
+                <span class="price">$225</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 5 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://images.hawesandcurtis.com/tr:q-80/CO/COPRW237-F01-208706-1400px-1820px.jpg" alt="Wool Coat">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="105" onclick="viewProductDetails(105)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Wool Overcoat</h3>
+                <p>Classic single-breasted design</p>
+                <span class="price">$349</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 6 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://cdn.suitdirect.co.uk/upload/siteimages/large/wrg16111_290_a.jpg" alt="Leather Boots">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="106" onclick="viewProductDetails(106)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Leather Chelsea Boots</h3>
+                <p>Handcrafted Italian leather</p>
+                <span class="price">$295</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 7 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSistzctYL-C0eClKPF6ymSy1QcTjMrIajqAA&s" alt="Linen Shirt">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="107" onclick="viewProductDetails(107)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Linen Button-Down</h3>
+                <p>Breathable premium linen blend</p>
+                <span class="price">$129</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 8 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="data:image/jpeg;base64,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" alt="Suede Handbag">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="108" onclick="viewProductDetails(108)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Suede Crossbody Bag</h3>
+                <p>Buttery soft suede with gold hardware</p>
+                <span class="price">$199</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 9 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://media.stories.com/assets/005/36/00/36003f1db228323e9dd9a63f87785ac96615e80d_xxl-1.jpg?imwidth=2560" alt="Wool Trousers">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="109" onclick="viewProductDetails(109)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Tailored Wool Trousers</h3>
+                <p>Straight-leg cut in merino wool</p>
+                <span class="price">$169</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 10 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="data:image/jpeg;base64,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" alt="Knit Cardigan">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="110" onclick="viewProductDetails(110)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Ribbed Knit Cardigan</h3>
+                <p>Soft cotton blend with pearl buttons</p>
+                <span class="price">$145</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 11 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="https://www.berluti.com/on/demandware.static/-/Sites-masterCatalog_Berluti/default/dw1485b84d/images/classic-leather-belt-35-mm-nero-berluti_01.jpg?sw=100&sfrm=jpg" alt="Leather Belt">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="111" onclick="viewProductDetails(111)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Classic Leather Belt</h3>
+                <p>Full-grain leather with brass buckle</p>
+                <span class="price">$89</span>
+            </div>
+        </div>
+
+        <!-- Collection Item 12 -->
+        <div class="collection-item">
+            <div class="collection-img-container">
+                <img src="data:image/jpeg;base64,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" alt="Silk Scarf">
+                <div class="collection-overlay">
+                    <button class="collection-btn" data-product-id="112" onclick="viewProductDetails(112)">View Details</button>
+                </div>
+            </div>
+            <div class="collection-info">
+                <h3>Printed Silk Scarf</h3>
+                <p>Hand-rolled edges, 100% silk</p>
+                <span class="price">$79</span>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3 class="zara-logo">ZARA</h3>
+                <p class="zara-footer-text">Timeless elegance meets contemporary fashion.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="zara-footer-heading">Quick Links</h4>
+                <ul class="zara-footer-list">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="zara-footer-heading">Newsletter</h4>
+                <p class="zara-footer-text">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form>
+                    <div class="zara-input-group">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="zara-btn">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="zara-copyright py-3 text-center">
+        <p>&copy; 2025 ZARA. All rights reserved. By Radhwane Harres</p>
+    </div>
+    </footer>
+    <script src="js/script-api.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

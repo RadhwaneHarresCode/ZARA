@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA - Where Style Meets Simplicity</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/Contact.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/LOgo.png">
+</head>
+<body>
+    <nav>
+        <div class="left-links">
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+        </div>
+        
+        <div class="logo-container">
+            <div class="logo-bg"></div>
+            <button onclick="window.location.href='index.html'">
+            <h4 class="logo">ZARA</h4>
+            </button>
+        </div>
+        
+        <div class="right-links">
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
+            <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>Experience our premium customer service. Our dedicated team is ready to assist you with any inquiries or personalized requests.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h3>Contact Information</h3>
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <span>Mon-Fri: 9AM-8PM EST</span>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <p>service@zara-premium.com</p>
+                            <span>Response within 2 hours</span>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Store Location</h4>
+                            <p>123 Fashion Avenue</p>
+                            <span>New York, NY 10001</span>
+                        </div>
+                    </div>
+
+                    <div class="service-hours">
+                        <h3>Service Hours</h3>
+                        <div class="hours-detail">
+                            <span>Personal Styling</span>
+                            <span>9:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hours-detail">
+                            <span>VIP Consultations</span>
+                            <span>10:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hours-detail">
+                            <span>Alterations</span>
+                            <span>8:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="styling">Personal Styling</option>
+                                <option value="alterations">Alterations & Tailoring</option>
+                                <option value="vip">VIP Shopping</option>
+                                <option value="wardrobe">Wardrobe Management</option>
+                                <option value="fabric-care">Fabric Care</option>
+                                <option value="virtual">Virtual Styling</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry or request..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our exclusive newsletter</label>
+                        </div>
+
+                        <button type="submit" class="contact-submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5 bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3 class="zara-logo">ZARA</h3>
+                <p class="zara-footer-text">Timeless elegance meets contemporary fashion.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="zara-footer-heading">Quick Links</h4>
+                <ul class="zara-footer-list">
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4 class="zara-footer-heading">Newsletter</h4>
+                <p class="zara-footer-text">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form>
+                    <div class="zara-input-group">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="zara-btn">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="zara-copyright py-3 text-center">
+        <p>&copy; 2025 ZARA. All rights reserved. By Radhwane Harres</p>
+    </div>
+    </footer>
+    <script src="js/script1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
